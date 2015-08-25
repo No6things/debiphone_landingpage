@@ -1,0 +1,125 @@
+/*Blue #2eaef0 & #026ea6 */
+
+.btn:focus, .btn-2,
+ul.why li:before,
+.progress .progress-bar,
+.accordionMod .panel-heading .current,
+#current:after,
+.flat .plan li.plan-name,
+.flat .plan.featured:hover li.plan-name,
+#filters ul li a:hover h5,
+#filters ul li a.active h5,
+.cl-effect-21 a::before,
+.cl-effect-21 a::after,
+.cl-effect-21 .active a::before,
+.cl-effect-21 .active a::after,
+.post-date a.date i, .service-icon i  {
+    background: #0A1A5B;
+}
+
+.bg-color {
+  background: #0A1A5B;
+	color: #fff;
+}
+
+.subscribe-btn {
+	background: #0A1A5B;
+	cursor: pointer;
+}
+
+.fa-inverse{
+  color: #263666;
+}
+
+.turquoise {
+  color: #007C5C !important;
+}
+
+.red{
+  color: #c92828!important;
+}
+
+.blue{
+  color: #0A1A5B!important;
+}
+
+div.content-box.big div.content-box-info p, .content-box-info h4 {
+	color: #e7f7ff;
+}
+
+.content-box-info-inverse h3{
+  color: #007C5C;
+  padding-top: 20px;
+}
+
+.about-wrap {
+    background: -webkit-linear-gradient(bottom, #F26739, #F89838);
+    background: -o-linear-gradient(bottom top, #F26739, #F89838);
+    background: -moz-linear-gradient(bottom top, #F26739, #F89838);
+    background: linear-gradient(to top, #F26739 , #F89838);
+}
+
+.subscribe-btn:focus, .subscribe-btn:hover,
+.ch-item .ch-info-front {
+	background: #fff;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #0A1A5B;
+	color: white;
+}
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pager li > a:hover, .pager li > a:focus {
+    background-color: #0A1A5B;
+    color: #fff;
+}
+
+
+.spinner {
+	border-top-color: #0A1A5B;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	border-color: #0A1A5B;
+}
+
+.btn-2:hover, .btn-2:active, .btn-2 {
+	box-shadow: 0 4px #0A1A5B;
+}
+
+
+.author-content, #cn-tabs .service, .comment-des, .contact-box {
+	border-bottom-color:#0A1A5B;
+}
+
+a, a:hover, a:active,
+.flat .plan li > strong,
+#slider_left i:hover,
+#slider_right i:hover,
+.text-color,
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus,
+.cl-effect-21 .active a,
+.cl-effect-21 .active a:focus,
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li.active > a,
+.post-date a.date strong,
+.pagination > li > a,
+.pagination > li > span,
+.fun,
+.btn-1:hover,
+.btn-1:active {
+    text-shadow: 0 0 0;
+    font-weight: 800;
+    color: #23A087;
+    text-decoration: none;
+}
+
+.social-icons-footer-bottom a:hover, .social-icons-footer-bottom a:focus{
+  color: #fafafa;
+}
+
+a:hover, a:active, a:visited{
+  text-decoration: none;
+}
