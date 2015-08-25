@@ -73,15 +73,6 @@ td{
     width: 100%;
 }
 
-
-.divider {
-    padding: 0 0 100px;
-}
-
-.divider-xs {
-    padding: 50px 0;
-}
-
 .light, .light h2, .light h3 {
     color:#007C5C!important;
 }
@@ -695,14 +686,18 @@ ul.text-slide {
 }
 
 .dropdown-menu > li > a {
-    color: #0A1A5B !important;
+    color: white;
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 6px 20px;
     outline: none;
     text-decoration: none;
     text-transform: uppercase;
 
+}
+
+.dropdown-menu ul li {
+    margin: 0;
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
@@ -726,7 +721,8 @@ ul.text-slide {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-    background-color: #E0E1E7;
+    background-color: rgba(35, 160, 135, 0.4);
+    color: #0A1A5B;
     background-image: none;
     background-repeat: no-repeat;
 
@@ -754,7 +750,18 @@ nav a:focus {
     outline: none;
 }
 
+#navigation .dropdown-menu {
+    top: 70px;
+    min-width: 58px;
+    background-color: rgb(35, 160, 135);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
+.dropdown-menu li a {
+    color: white;
+}
 
 /*-------------------------------------------------------*/
 /* 7. Title code
