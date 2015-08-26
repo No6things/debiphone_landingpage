@@ -865,6 +865,9 @@ section.page-title {
     padding: 70px 0 30px;
 }
 
+section .container.expanded {
+    max-width: 1035px;
+}
 
 section .container{
     padding-top: 50px;
@@ -872,7 +875,7 @@ section .container{
 }
 
 section .container-sub{
-  width: 70%;
+  max-width: 1035px;
 }
 
 footer .container{
