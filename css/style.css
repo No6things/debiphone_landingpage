@@ -1569,8 +1569,16 @@ a.scrollup:hover i,a.scrollup:focus i {
 }
 
 .list-business{
-  padding: 0 0 0 200px;
-  font-weight: 700;
+    max-width: 1035px;
+    margin: 0 auto;
+}
+
+.list-business td {
+    border: none;
+}
+
+.list-business tr td:first-child {
+    color: #23A087;
 }
 
 
