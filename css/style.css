@@ -1630,10 +1630,11 @@ a.scrollup:hover i,a.scrollup:focus i {
     z-index: 2000;
     padding: 5px 2px 0 2px;
     float: right;
+    width: 315px;
   }
 
 .chat{
-  transform: translateY(310px);
+  transform: translateY(300px);
 }
 
 .input{

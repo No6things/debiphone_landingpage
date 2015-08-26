@@ -303,7 +303,7 @@ jQuery(document).ready(function () {
         if (jQuery('.chat').hasClass("chat-active")) {
           console.log("chat should undo scroll");
           jQuery(".chat").removeClass("chat-active");
-          jQuery(".chat").animate({bottom: "-310px"},"slow");
+          jQuery(".chat").animate({bottom: "-300px"},"slow");
           jQuery(".scrollchat > i").fadeOut("slow", function(){
             jQuery(this).removeClass("fa-angle-down")
             .addClass("fa-angle-up")
