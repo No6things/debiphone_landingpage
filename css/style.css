@@ -1762,6 +1762,14 @@ a.scrollchat:hover i,a.scrollchat:focus i {
   text-align: center;
 }
 
+.tab-col:last-child {
+  color: #F26739;
+}
+
+td.tab-col {
+  font-weight: 500;
+}
+
 .about-cash{
   width: 40%;
   margin-left: -105px;
