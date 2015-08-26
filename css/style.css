@@ -1184,6 +1184,11 @@ color: #0A1A5B;
     background-size: 100%
 }
 
+.quote-wrap .container {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
 .parallax-overlay {
     background: rgba(37, 39, 88, 0.9);
     width:100%;
@@ -1551,6 +1556,11 @@ a.scrollup:hover i,a.scrollup:focus i {
     background-size: 100%
 }
 
+.business-wrap .container {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
 .business-cost{
   color: #0A1A5B !important;
   font-weight: bold !important;
@@ -1590,6 +1600,11 @@ a.scrollup:hover i,a.scrollup:focus i {
 .banks-wrap {
     background: url('../img/pl3.jpg') no-repeat fixed;
     background-size: 100%;
+}
+
+.banks-wrap .container {
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 
 .vector-wrap{
