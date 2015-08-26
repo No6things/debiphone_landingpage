@@ -116,6 +116,12 @@ a, a:hover, a:active,
     text-decoration: none;
 }
 
+.white-link, .white-link:hover, .white-link:active {
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .social-icons-footer-bottom a:hover, .social-icons-footer-bottom a:focus{
   color: #fafafa;
 }
