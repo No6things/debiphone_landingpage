@@ -1532,7 +1532,7 @@ a.scrollup:hover i,a.scrollup:focus i {
   font-family: 'FontAwesome';
   font-size: 120%;
   content: '\f00c';
-  margin:0 25px 0 -30px;
+  margin:0 8px 0 -30px;
 }
 
 .slider-bullet-clients > li:before {
