@@ -1836,6 +1836,15 @@ td.tab-col {
     margin-left: 40.5%;
 }
 
+.tnc-link {
+    color: #F26739;
+    margin: 50px 0;
+}
+
+.tnc-link a {
+    text-decoration: underline;
+}
+
 /*-------------------------------------------------------*/
 /* 24. Terms and Conditions Page
 /*-------------------------------------------------------*/
