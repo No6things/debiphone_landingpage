@@ -402,6 +402,10 @@ ul.fullwidth-slider, ul.fullwidth-slider .caption-inside, ul.fullwidth-slider .c
   width:50%; position: relative; text-align: left; z-index:101;
 }
 
+.slider-container .slider-bullet {
+    max-width: 650px;
+}
+
 #slider_left i, #slider_right i, .bx-prev i, .bx-next i {
     font-size: 80px;
     color: #fff;
@@ -1129,7 +1133,7 @@ i > img, .square-i {
 .slider-bullet li:before {
 font-family: 'FontAwesome';
 content: '\f00c';
-margin:0 5px 0 -15px;
+margin: 0 8px 0 -30px;
 color: #0A1A5B;
 }
 
