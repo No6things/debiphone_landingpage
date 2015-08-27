@@ -392,6 +392,10 @@ ul.fullwidth-slider, ul.fullwidth-slider .caption-inside, ul.fullwidth-slider .c
 
 /* Home Full Screen Slider */
 
+.home header {
+    height: 100%;
+}
+
 .slider-container {
     width: 100%;
     height: 100%;
