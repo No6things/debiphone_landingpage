@@ -1815,6 +1815,10 @@ td.tab-col {
 /* 24. Support Page
 /*-------------------------------------------------------*/
 
+.support section .container-sub {
+    max-width: 920px;
+}
+
 .support-title, .support-title > h3{
   padding-top: 3px;
   line-height: 34px;
