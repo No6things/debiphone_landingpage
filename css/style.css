@@ -686,7 +686,7 @@ ul.text-slide {
 }
 
 .dropdown-menu > li > a {
-    color: white;
+    color: #23A087;
     font-size: 14px;
     font-weight: 600;
     padding: 6px 20px;
@@ -721,8 +721,8 @@ ul.text-slide {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-    background-color: rgba(35, 160, 135, 0.4);
-    color: #0A1A5B;
+    background-color: white;
+    color: #23A087;
     background-image: none;
     background-repeat: no-repeat;
 
@@ -751,16 +751,34 @@ nav a:focus {
 }
 
 #navigation .dropdown-menu {
-    top: 70px;
+    top: 55px;
+    right: -30px;
     min-width: 58px;
-    background-color: rgb(35, 160, 135);
+    background-color: white;
     text-align: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
+#navigation .dropdown-menu  li {
+    margin: 0;
+}
+
 .dropdown-menu li a {
-    color: white;
+    color: #0A1A5B;
+}
+
+#navigation ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+#navigation .dropdown-menu > li {
+    display: inline-block;
+    float: left;
+}
+
+#navigation .open > ul {
+    display: inline-flex !important;
 }
 
 /*-------------------------------------------------------*/

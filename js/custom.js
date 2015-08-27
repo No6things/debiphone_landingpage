@@ -48,13 +48,19 @@ Drop Down Menu Fade Effect
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp(250)
      });
 
+    $('#navigation .nav .dropdown').hover(function() {
+        $(this).addClass('open');
+    }, function() {
+        $(this).removeClass('open');
+    });
+
 
 
 /*==========================*/
 /* Navigation Scrolling
 /*==========================*/
 
-/*
+
     jQuery('.nav').onePageNav({ //gives error on console
             filter: ':not(.external)',
             begin: function() {
@@ -64,7 +70,7 @@ Drop Down Menu Fade Effect
             console.log("stop")
             }
         });
-*/
+
 
     var navigationHeight = jQuery("#navigation").outerHeight();
 
