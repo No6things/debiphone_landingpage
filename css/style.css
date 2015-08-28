@@ -1850,12 +1850,6 @@ td.tab-col {
   line-height: 34px;
 }
 
-
-
-.support-car{
-  padding-bottom: 200px !important;
-}
-
 .support-slider > li{
   margin:0;
 }
@@ -1888,6 +1882,15 @@ td.tab-col {
 
 .tnc-link a {
     text-decoration: underline;
+}
+
+.application-carousel {
+    max-width: 260px;
+    background-image: url("/img/iphone6-car.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 100px 20px 100px 22px;
+    margin: 0 auto;
 }
 
 /*-------------------------------------------------------*/
