@@ -531,7 +531,7 @@ jQuery(document).ready(function(){
         mode: "fade",
         pager: false,
         auto: true,
-        pause: 4000,
+        pause: 10000,
         autoStart: true,
         controls: false,
         autoDirection: false,
