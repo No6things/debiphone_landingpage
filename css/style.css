@@ -1054,6 +1054,47 @@ div.content-box.big div.content-box-info p, div.content-box.big div.content-box-
     z-index: 5;
 }
 
+.service-icon {
+    background-image: url("/img/services-icons.png");
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-size: 295px;
+    margin: auto;
+    top: 15px;
+}
+
+.service-box .ch-item:hover .ch-info-front {
+    background: #23A087;
+}
+
+
+.service-icon.clients-icon {
+    background-position: 0 0;
+}
+
+.ch-item:hover .service-icon.clients-icon {
+    background-position: 0 100px;
+}
+
+.service-icon.business-icon {
+    background-position: -100px 0;
+}
+
+.ch-item:hover .service-icon.business-icon {
+    background-position: -100px 100px;
+}
+
+.service-icon.bank-icon {
+    background-position: -200px 0;
+    left: 4px;
+}
+
+.ch-item:hover .service-icon.bank-icon {
+    background-position: -200px 100px;
+}
+
+
 .ch-info-wrap:hover{
     color: #ffffff;
 }
@@ -1143,7 +1184,7 @@ color: #0A1A5B;
 
 
 .ch-item:hover .ch-info-front {
-    background: #f0f0f0 !important;
+    background: #f0f0f0;
 }
 
 
