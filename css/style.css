@@ -116,6 +116,22 @@ input:focus, textarea:focus {
     border-color: #C9C9C9;
 }
 
+/*-------------------------------------------------------*/
+/* 3. Flags
+/*-------------------------------------------------------*/
+
+.flag-list{
+  position: fixed;
+  right: 30px;
+  top:15px;
+  z-index: 2000;
+}
+
+.flag-list > li{
+  margin-left: 10px;
+  display: inline;
+}
+
 
 
 /*-------------------------------------------------------*/
@@ -1722,6 +1738,10 @@ a.scrollup:hover i,a.scrollup:focus i {
     float: right;
     width: 315px;
   }
+
+.chat-es{
+  width: 421px !important;
+}
 
 .chat{
   transform: translateY(300px);
