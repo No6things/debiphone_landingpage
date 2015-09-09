@@ -1016,7 +1016,11 @@ div.content-box.big div.content-box-info p, div.content-box.big div.content-box-
 
 .service-box {
     display: table;
-    margin-bottom: 50px;
+  /*  margin-bottom: 50px;*/
+}
+
+.service-box > .content-box > .content-box-info > p{
+  margin-bottom: 20px !important;
 }
 
 .service-icon, .service-box-content {
@@ -1722,6 +1726,10 @@ a.scrollup:hover i,a.scrollup:focus i {
   width: 36% !important;
   margin-left: auto;
   margin-right: auto;
+}
+
+.es{
+  width: 38.2% !important;
 }
 /*-------------------------------------------------------*/
 /* 24. Chat
