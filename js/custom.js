@@ -233,14 +233,108 @@ Drop Down Menu Fade Effect
             text: notymsg,
             type: 'error',
             animation: {
-              open: 'animated bounceInLeft', // Animate.css class names
-              close: 'animated bounceOutLeft', // Animate.css class names
+              open: 'animated bounceInLeft deez', // Animate.css class names
+              close: 'animated bounceOutLeft deez', // Animate.css class names
               easing: 'swing', // unavailable - no need
               speed: 500 // unavailable - no need
             }
           });
         }
       });
+
+
+/*----------------------------------------------------*/
+/*  CUSTOM EMAIL UNSUBSCRIPTION
+/*----------------------------------------------------*/
+$("#unsubscribe-buttom")
+  .click(function (e) {
+    e.preventDefault();
+    var email = $("#email-un").val();
+    var message = $("#message-un").val();
+
+
+    var subject = 'Unsubscribed to Debiphone';
+
+    var text = "An user has unsubscribed to Debiphone's newsletter:\n"  + email+ "\n "+message;
+
+    var dataString ='api_user=acavadia'+'&api_key=InWork123'+'&list=Debiphone' + '&email=' + email;
+
+    var dataString2 ='api_user=acavadia'+'&api_key=InWork123'+ '&to=acavadia@inworknet.com' + '&toname=Debiphone' + '&subject=' + subject + '&from=debiphone@support.com' + '&text=' + text ;
+
+
+    function isValidEmail(email) {
+      var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+      return pattern.test(email);
+    };
+
+    if (isValidEmail(email)) {
+      $.ajax({
+        type: "POST",
+        url: "https://api.sendgrid.com/api/newsletter/lists/email/delete.json",
+        data: dataString,
+        beforeSend: function () {
+          $(".unsubscribe-form")
+            .LoadingOverlay("show", {
+              image: '/img/flat-loader.gif'
+            });
+        },
+        complete: function () {
+            var notymsg;
+            $.ajax({
+              type: "POST",
+              url: "https://api.sendgrid.com/api/unsubscribes.add.json",
+              data: dataString
+            });
+            $.ajax({
+              type: "POST",
+              url: "https://api.sendgrid.com/api/mail.send.json",
+              data: dataString2,
+              complete: function () {
+                $(".unsubscribe-form")
+                  .LoadingOverlay("hide");
+                  $("#email-un")
+                    .val('');
+                  $("#message-un")
+                      .val('');
+                  if   ($(".chat").hasClass("chat-es")){
+                    notymsg="¡Ya no recibiras m&aacute;s correos de Debiphone!";
+                  }else{
+                    notymsg="You wont be receiving Debiphone newsletter anymore!";
+                  }
+                  var n = noty({
+                    text: notymsg,
+                    type: 'success',
+                    animation: {
+                      open: 'animated bounceInLeft deez', // Animate.css class names
+                      close: 'animated bounceOutLeft deez', // Animate.css class names
+                      easing: 'swing', // unavailable - no need
+                      speed: 500 // unavailable - no need
+                    }
+                  });
+                }
+              });
+
+
+        }
+      });
+    } else {
+      if   ($(".chat").hasClass("chat-es")){
+        notymsg="¡Correo Invalido";
+      }else{
+        notymsg="Invalid Email!";
+      }
+      var n = noty({
+        text: notymsg,
+        type: 'error',
+        animation: {
+          open: 'animated bounceInLeft deez', // Animate.css class names
+          close: 'animated bounceOutLeft deez', // Animate.css class names
+          easing: 'swing', // unavailable - no need
+          speed: 500 // unavailable - no need
+        }
+      });
+    }
+  });
 
 
 /*----------------------------------------------------*/

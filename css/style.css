@@ -1794,7 +1794,12 @@ a.scrollup:hover i,a.scrollup:focus i {
   width: 30%
 }
 
-.sendgrid-form  input[type=text], .sendgrid-form  input[type=textarea] {
+.unsubscribe-form{
+  margin: auto;
+  width: 30%;
+}
+
+.sendgrid-form  input[type=text], .sendgrid-form  input[type=textarea], .unsubscribe-form  input[type=text], .unsubscribe-form  input[type=textarea] {
   width: 70%;
   display: inline-block;
   border-radius: 6px;
@@ -1805,7 +1810,7 @@ a.scrollup:hover i,a.scrollup:focus i {
   margin-bottom: 0;
 }
 
-.sendgrid-form  input[type=button] {
+.sendgrid-form  input[type=button],  .unsubscribe-form  input[type=button]{
   border-radius: 6px;
   border-color: #23A087;
   background-color: #23A087;
@@ -1814,7 +1819,7 @@ a.scrollup:hover i,a.scrollup:focus i {
   border-style: solid;
 }
 
-.sendgrid-form > .row {
+.sendgrid-form > .row, .unsubscribe-form  > .row {
   padding-bottom: 20px;
 }
 
