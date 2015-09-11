@@ -82,23 +82,23 @@
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="row flag-list">
                                                               <li><a href="tnc.html"><img src="img/en-flag.png" alt="Debiphone"></a></li>
-                                                              <li><a href="es/unsubscribe.html"><img src="img/es-flag.png" alt="Debiphone"></a></li>
+                                                              <li><a href="es/tnc.html"><img src="img/es-flag.png" alt="Debiphone"></a></li>
                                                             </ul>
                                                             <ul class="nav navbar-nav navbar-right">
-                                                                  <li><a class="external" href="index.html">Home</a></li>
-                                                                  <li><a class="external" href="about.html">ABOUT US</a></li>
+                                                                  <li><a class="external" href="index.html">Inicio</a></li>
+                                                                  <li><a class="external" href="about.html">Nosotros</a></li>
                                                                   <li class="dropdown">
                                                                       <a href="index.html#services" class="dropdown-toggle external" data-toggle="dropdown disabled"
                                                                          role="button" aria-haspopup="true" aria-expanded="false">
-                                                                          Services
+                                                                          Servicios
                                                                       </a>
                                                                       <ul class="dropdown-menu">
-                                                                        <li><a class="external" href="security.html">SECURITY</a></li>
+                                                                        <li><a class="external" href="security.html">Seguridad</a></li>
                                                                         <li role="separator">|</li>
-                                                                        <li><a class="external" href="fees.html">FEES</a></li>
+                                                                        <li><a class="external" href="fees.html">TARIFAS</a></li>
                                                                       </ul>
                                                                   </li>
-                                                                  <li><a class="external" href="support.html">Support</a></li>
+                                                                  <li><a class="external" href="support.html">SOPORTE</a></li>
                                                             </ul>
                                                       </div>
                                                       <!-- /.Navbar-collapse -->
@@ -138,14 +138,14 @@
                 <div id="menu-body">
                     <form class="unsubscribe-form" action="index.html" method="delete">
                         <div class="row">
-                          We are pleased to help you...
+                          Encantados de ayudarte...
                         </div>
                         <div class="row">
-                          <label for="mail">Mail:   </label>
+                          <label for="mail">Correo:   </label>
                           <input type="text" id="email-un" class="input pull-right" value="" required></br>
                         </div>
                         <div class="row">
-                          <label for="message">Reason:  </label>
+                          <label for="message">Raz&oacute;:  </label>
                           <input type="textarea" id="message-un" class="input pull-right" value="" rows="4" ></br>
                         </div>
                       <input type="button" id="unsubscribe-buttom" class="pull-right" value="Unsubscribe">
@@ -157,36 +157,35 @@
 
             <!-- /Chat Menu -->
             <section id="contact">
-              <div >
+              <div>
                 <div class="">
                   <ul class="chat col-lg-4 col-md-4 pull-right">
                     <li id="menu-head">
-                      <h3 class="pull-left">Chat with Us</h3>
+                      <h3 class="pull-left">Escr&iacute;benos</h3>
                       <a href="#" class="pull-right scrollchat"><i class="fa fa-angle-up"></i></a>
-                      <div class="clearfix">
-
-                      </div>
+                      <div class="clearfix"></div>
                     </li>
                     <li id="menu-body">
-                        <form class="sendgrid-form" action="index.html" method="post">
+                        <form class="sendgrid-form" novalidate>
+
                             <div class="row">
-                              We are pleased to help you...
-                              <img src="img/logo.png" alt="" class="logo-form pull-right"/>
+                              Podemos ayudarte...
+                              <img src="../img/logo.png" alt="" class="logo-form pull-right"/>
                             </div>
                             <div class="row">
-                              <label for="name">Name:  </label>
-                              <input type="text" id="name" class=" pull-right input" value=""></br>
+                              <label for="name">Nombre:  </label>
+                              <input type="text" id="name" class=" pull-right input" value="" required=""></br>
                             </div>
                             <div class="row">
-                              <label for="mail">Mail:   </label>
-                              <input type="text" id="mail" class="input pull-right" value="" required></br>
+                              <label for="email">Correo:   </label>
+                              <input type="text" id="email" class="input pull-right" value="" required></br>
                             </div>
                             <div class="row">
-                              <label for="message">Message:  </label>
-                              <input type="textarea" id="message" class="input pull-right" value="" rows="4" required></br>
+                              <label for="message">Mensaje:  </label>
+                              <input type="textarea" id="message" class="input pull-right" rows="4" required></br>
                             </div>
 
-                          <input type="button" class="pull-right" value="Chat...">
+                            <input type="button" id="sendgrid-buttom" class="pull-right" value="Enviar...">
                         </form>
                     </li>
                   </ul>
@@ -194,7 +193,6 @@
               </div>
             </section>
             <!-- /Chat Menu -->
-
 
             <!-- Section 7 -->
             <section id="section7" class="contacts">
