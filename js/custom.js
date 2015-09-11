@@ -158,11 +158,6 @@ Drop Down Menu Fade Effect
     }
 
 
-    //Horizontal parallax
-    jQuery('.about-wrap .parallax-layer')
-        .hparallax({
-          mouseport: jQuery('.about-wrap')
-    });
 
     /*----------------------------------------------------*/
     /*  CUSTOM EMAIL SUBSCRIPTION
@@ -240,33 +235,6 @@ Drop Down Menu Fade Effect
           });*/
         }
       });
-
-
-/*----------------------------------------------------*/
-/*  Animated Progress Bars
-/*----------------------------------------------------*/
-
-    jQuery('.skills li').each(function () {
-        jQuery(this).fappear(function() {
-          jQuery(this).animate({opacity:1,left:"0px"},800);
-          var b = jQuery(this).find(".progress-bar").attr("data-width");
-          jQuery(this).find(".progress-bar").animate({
-            width: b + "%"
-          }, 1300, "easeOutCirc");
-        });
-    });
-
-
-/*----------------------------------------------------*/
-/*  Animated Count To
-/*----------------------------------------------------*/
-
-    jQuery('.fun-wrap .fun-box').each(function () {
-        jQuery(this).fappear(function() {
-            jQuery('.fun').countTo();
-        });
-    });
-
 
 
 /*----------------------------------------------------*/
