@@ -95,6 +95,10 @@ ul li {
 }
 
 
+ul .deez{
+  margin: 0;
+}
+
 
 /*-------------------------------------------------------*/
 /* 2. Form code
@@ -1748,7 +1752,6 @@ a.scrollup:hover i,a.scrollup:focus i {
   }
 
 .chat-es{
-  width: 421px !important;
 }
 
 .chat{
